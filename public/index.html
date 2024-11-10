@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator & Gallery</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>灵动甲骨AIGC作图平台</h1>
+        <div class="split-layout">
+            <div class="gallery-section">
+                <div class="upload-container">
+                    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                    <button id="uploadButton" class="upload-btn">上传图片</button>
+                </div>
+                <div class="showcase-header">
+                    <h2>精选素材</h2>
+                    <a href="/gallery.html" class="view-all-btn">查看全部素材</a>
+                </div>
+                <div id="imageShowcase" class="image-showcase"></div>
+            </div>
+            <div class="generator-section">
+                <div class="api-test">
+                    <button id="test-api">Test API Key</button>
+                    <div id="api-status" style="display: none;"></div>
+                </div>
+                <div class="input-section">
+                    <textarea id="prompt" placeholder="Enter your image description here..." rows="3"></textarea>
+                    <button id="generate">Generate Image</button>
+                </div>
+                <div id="result" class="result-section">
+                    <img id="generated-image" style="display: none;">
+                    <div id="loading" style="display: none;">Generating image...</div>
+                    <div id="error" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/shared.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

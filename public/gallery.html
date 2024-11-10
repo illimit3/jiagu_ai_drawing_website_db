@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>素材图像广场 - 灵动甲骨AIGC</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="gallery-header">
+            <h1>素材图像广场</h1>
+            <a href="/" class="back-btn">返回首页</a>
+        </header>
+        <div class="gallery-filters">
+            <select id="sortFilter" class="filter-select">
+                <option value="newest">最新上传</option>
+                <option value="oldest">最早上传</option>
+            </select>
+        </div>
+        <div id="fullGallery" class="full-gallery"></div>
+    </div>
+
+    <!-- 添加评论模态框的容器 -->
+    <div id="commentModalContainer"></div>
+
+    <!-- 确保在gallery.js之前引入共享函数 -->
+    <script src="/shared.js"></script>
+    <script src="/gallery.js"></script>
+</body>
+
+</html>
